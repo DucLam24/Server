@@ -23,11 +23,11 @@ const VideoSchema = new mongoose.Schema(
       required: true,
     },
     likes: {
-      type: String,
+      type: Number,
       required: true,
     },
     comments: {
-      type: String,
+      type: Number,
       required: true,
     },
     avatarUri: {
