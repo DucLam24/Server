@@ -5,9 +5,11 @@ import authRouter from "./api/router/auth.js";
 import userRouter from "./api/router/user.js";
 import videoRouter from "./api/router/videos.js";
 import cookieParser from "cookie-parser";
+// import cors from "cors";
+import cors from "cors";
 
 const app = express();
-
+app.use(cors());
 // mongodb connect
 
 dotenv.config();

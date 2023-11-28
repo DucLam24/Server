@@ -2,6 +2,10 @@ import mongoose from "mongoose";
 
 const VideoSchema = new mongoose.Schema(
   {
+    id: {
+      type: String,
+      required: true,
+    },
     channelName: {
       type: String,
       required: true,
