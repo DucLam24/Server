@@ -4,7 +4,7 @@ import {
   getUser,
   getUsers,
   updateUser,
-  register,
+  registers,
 } from "../controllers/user.js";
 import { verifyAdmin, verifyToken, verifyUser } from "../utils/verifyToken.js";
 
@@ -33,6 +33,6 @@ router.get("/:id", verifyUser, getUser);
 //GET ALL
 router.get("/", getUsers);
 
-router.post("/", register);
+router.post("/", registers);
 
 export default router;
